@@ -1,45 +1,8 @@
 import Ember from 'ember';
 
-var stories = [{
-  id: 1,
-  headline: "Bieber sleeps at night!",
-  author: "Tom Sellec",
-  image: "http://2.bp.blogspot.com/-am6OiGDEjj0/VkTZlLOzdyI/AAAAAAACSiQ/_Nbw_Vprhxk/s1600/Justin%2BBieber%2BDebuts%2B%2522Love%2BYourself%2522-90.jpg",
-  story: "It's true"
-},{
-  id: 2,
-  headline: "Bees Are Cool.",
-  author: "Harry Potter",
-  image: "http://media.tumblr.com/tumblr_lojnkrKkHu1qi4jmm.jpg",
-  story: "Bees are nice and like people and honey."
-},{
-  id: 3,
-  headline: "BFF's, barnacles, and Barbie. The inside scoop ",
-  author: "The little dutch boy",
-  image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaRZFR_dF_dS31leZA2wCykpJq9nVfpAnTvsLfwt61_T9rb774",
-  story: "The untold story of all things (almost) interesting"
-},{
-  id: 4,
-  headline: "Bieber sleeps at night!",
-  author: "Tom Sellec",
-  image: "http://2.bp.blogspot.com/-am6OiGDEjj0/VkTZlLOzdyI/AAAAAAACSiQ/_Nbw_Vprhxk/s1600/Justin%2BBieber%2BDebuts%2B%2522Love%2BYourself%2522-90.jpg",
-  story: "It's true"
-},{
-  id: 5,
-  headline: "Bees Are Cool.",
-  author: "Harry Potter",
-  image: "http://media.tumblr.com/tumblr_lojnkrKkHu1qi4jmm.jpg",
-  story: "Bees are nice and like people and honey."
-},{
-  id: 6,
-  headline: "BFF's, barnacles, and Barbie. The inside scoop ",
-  author: "The little dutch boy",
-  image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaRZFR_dF_dS31leZA2wCykpJq9nVfpAnTvsLfwt61_T9rb774",
-  story: "The untold story of all things (almost) interesting"
-}];
 
 export default Ember.Route.extend({
   model() {
-    return stories;
-  }
+    return this.store.findAll('story');
+  },
 });
