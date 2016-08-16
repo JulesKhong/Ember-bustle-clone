@@ -1,0 +1,38 @@
+.col-xs-4 {
+  margin: 1em 1em;
+  background-color: #343536;
+  height: 350px;
+}
+
+img {
+  width: 100%;
+  /*margin-top: 1em;*/
+  height: 250px;
+  position:absolute;
+  left: 0;
+  top: 0;
+}
+
+li {
+  list-style: none;
+}
+
+h4  {
+  color: white;
+  padding-top: 12em;
+  font-size: 1.5em;
+  padding-left: 0em;
+
+}
+
+p {
+  color: white;
+  font-style: italic;
+  line-height: 0;
+  padding-left: .5em;
+
+}
+
+.row {
+  margin-top: 7.5em;
+}
